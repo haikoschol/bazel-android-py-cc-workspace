@@ -1,0 +1,3 @@
+build --enable_bzlmod=false
+query --enable_bzlmod=false
+

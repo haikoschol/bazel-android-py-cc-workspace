@@ -1,0 +1,10 @@
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+SQLITE_BAZEL_COMMIT = "6b808c32d9dcd856c8d3aa124a6fafe7fc2c4d75"
+
+http_archive(
+    name = "com_github_rockwotj_sqlite_bazel",
+    strip_prefix = "sqlite-bazel-" + SQLITE_BAZEL_COMMIT,
+    urls = ["https://github.com/rockwotj/sqlite-bazel/archive/%s.zip" % SQLITE_BAZEL_COMMIT],
+)
+
